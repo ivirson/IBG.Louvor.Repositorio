@@ -12,6 +12,7 @@ namespace IBG.Louvor.Repertorio.Models
         public Equipe Equipe { get; set; }
         public int EquipeId { get; set; }
         public DateTime DataApresentacao { get; set; }
+        public string DiaDaSemana { get; set; }
         public bool Ativo { get; set; }
 
         public ListaMusicas()
