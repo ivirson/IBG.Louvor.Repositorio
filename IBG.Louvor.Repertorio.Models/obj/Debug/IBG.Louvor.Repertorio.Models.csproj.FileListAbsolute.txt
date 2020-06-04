@@ -1,5 +1,5 @@
-C:\Users\idaltro\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\bin\Debug\IBG.Louvor.Repertorio.Models.dll
-C:\Users\idaltro\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\bin\Debug\IBG.Louvor.Repertorio.Models.pdb
-C:\Users\idaltro\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.csprojAssemblyReference.cache
-C:\Users\idaltro\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.dll
-C:\Users\idaltro\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.pdb
+C:\Users\IVIRSON_ARINE\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\bin\Debug\IBG.Louvor.Repertorio.Models.dll
+C:\Users\IVIRSON_ARINE\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\bin\Debug\IBG.Louvor.Repertorio.Models.pdb
+C:\Users\IVIRSON_ARINE\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.csprojAssemblyReference.cache
+C:\Users\IVIRSON_ARINE\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.dll
+C:\Users\IVIRSON_ARINE\Documents\Projetos\IBG.Louvor.Repertorio\IBG.Louvor.Repertorio.Models\obj\Debug\IBG.Louvor.Repertorio.Models.pdb

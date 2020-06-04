@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Início";
+    var ultimasMusicas = (List<IBG.Louvor.Repertorio.Models.Musica>)ViewBag.UltimasMusicas;
+}
+
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Equipes")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-users"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Equipes</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Musicas")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-music"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Músicas</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-plus"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Adicionar música</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-list-ol"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Repertório</p>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-list-alt"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Criar repertório</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Usuarios")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-user"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Membros por equipe</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-play-circle"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Músicas por equipe</p>
+        </div>
+        <div class="col text-center col-menu">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-lg text-white bg-gradient-danger m-auto">
+                <i class="fas fa-users"></i>
+            </a>
+            <p class="mt-1 mb-0 text-center text-xs">Atalho</p>
+        </div>
+    </div>
+</div>
+
+<div class="pb-5">
+    <div class="container-fluid">
+        <div class="card bg-gradient-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Músicas adicionadas recentemente</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-dark table-flush">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Música</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            if (ultimasMusicas == null || ultimasMusicas.Count == 0)
+                            {
+                                <tr class="bg-gradient-default">
+                                    <td scope="row" class="text-center">Nenhuma música adicionada recentemente</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var item in ultimasMusicas)
+                                {
+                                    <tr class="bg-gradient-default">
+                                        <td scope="row">@item.Nome - @item.Cantor</td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

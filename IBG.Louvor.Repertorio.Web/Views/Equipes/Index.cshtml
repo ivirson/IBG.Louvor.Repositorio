@@ -1,0 +1,69 @@
+﻿@model IEnumerable<IBG.Louvor.Repertorio.Models.Equipe>
+@{
+    ViewBag.Title = "Index";
+}
+
+    <div class="card bg-gradient-default shadow mx-3">
+        <div class="card-header bg-transparent border-0">
+            <h3 class="text-white mb-0">Equipes</h3>
+        </div>
+        <div id="accordion">
+            @foreach (var item in Model)
+            {
+                <div class="card bg-gradient-default">
+                    <div class="card-header bg-gradient-default" id="heading-@item.NomeAbreviado">
+                        <div class="mb-0">
+                            <button class="btn btn-link px-0" data-toggle="collapse" data-target="#collapse-@item.NomeAbreviado" aria-expanded="true" aria-controls="collapse-@item.NomeAbreviado">
+                                <span class="avatar rounded-circle bg-danger mr-3">
+                                    <span class="text-dark">@item.NomeAbreviado</span>
+                                </span>
+                                <span class="media-body">
+                                    <span class="mb-0 text-white">@item.Nome</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="collapse-@item.NomeAbreviado" class="collapse" aria-labelledby="heading-@item.NomeAbreviado" data-parent="#accordion">
+                        <div class="card-body bg-default">
+                            @foreach (var usuario in item.Usuarios)
+                            {
+                                <p class="mb-0 text-white">@usuario.Nome</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        @*<div class="table-responsive">
+            <table class="table align-items-center table-dark table-flush">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Equipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <a href="#" class="avatar rounded-circle bg-white mr-3">
+                                        <span class="text-dark">@item.NomeAbreviado</span>
+                                    </a>
+                                    <div class="media-body">
+                                        <span class="mb-0 text-sm">@item.Nome</span>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr class="thead-dark">
+                            @Html.Partial("_UsuariosEquipe")
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>*@
+    </div>
+

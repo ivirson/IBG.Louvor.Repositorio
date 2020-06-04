@@ -1,0 +1,38 @@
+﻿div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label,
+div.dataTables_wrapper div.dataTables_info {
+    color: #fff;
+}
+
+.page-link {
+    margin: 1px !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    background-color: inherit !important;
+    border: none !important;
+    width: 50px !important;
+    margin: 0 5px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important;
+}
+
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:first-child,
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+    padding: 0 !important;
+}
+
+.pagination {
+    justify-content: center !important;
+    margin: 15px 0 !important;
+}
+
+.col-menu {
+    padding-left: 0;
+    padding-right: 0;
+}
