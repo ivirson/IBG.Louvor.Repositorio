@@ -1,0 +1,17 @@
+﻿@model IEnumerable<IBG.Louvor.Repertorio.Models.Usuario>
+
+@foreach (var item in Model)
+{
+    <tr class="bg-gradient-default">
+        <td scope="row">@item.Nome</td>
+        <td scope="row">@item.Equipe.NomeAbreviado</td>
+        <td scope="row">
+            <a href="#" class="btn btn-sm btn-danger">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="btn btn-sm btn-warning">
+                <i class="fa fa-edit" aria-hidden="true"></i>
+            </a>
+        </td>
+    </tr>
+}
